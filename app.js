@@ -35,12 +35,11 @@ sequelize
 
 // Import routes
 const authRoute = require("./routes/authRoute");
-const routeRoute = require("./Routes/routeRoute");
+const routeRoute = require("./routes/routeRoute");
 
 // Mount routes
 app.use("/api", authRoute);
 app.use("/api/routes", routeRoute);
-
 // Version endpoint (optional)
 app.get("/version", (req, res) => {
   res.json({ version: 1 });
