@@ -19,12 +19,7 @@ app.use(nocache()); // Prevent caching
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
-// CORS Configuration
-// const corsOptions = {
-//   origin: "*",
-//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-//   allowedHeaders: ["Content-Type", "Authorization"],
-// };
+
 app.use(cors());
 
 // Check database connection
